@@ -31,11 +31,12 @@ ul {
 .navbar {
   background-color: #474040;
   color: #fff;
-  height: 70px;
+   padding: 1em 0;
+
 }
 
 .navbar .logo {
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
 }
 
@@ -67,44 +68,101 @@ ul {
 }
 
 .header {
-  background-color: #0000ff;
-  color: #f5f5f5;
+  color: #333;
   max-height: 800px;
+  padding: 4rem 0;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 /0.1), 0 1px 2px -1px rgb(0 0 0 /0.1);
 }
 
-.header h1{
-    font-size: ;
-    font-weight: bold;
-    line-height: 1.2;
+.header h1 {
+  font-size: x-large;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
-.header img{
-    max-width: 350px;
-    height: 300px;
-    margin-top: 40px;
+.header img {
+  max-width: 350px;
+  height: 300px;
+  margin-top: 40px;
 }
 
-.header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 2.5em;
 }
 
-.boxes .container{
-    display: flex;
-    justify-content: space-between;
+.header .header-text{
+  flex-basis: 60%;
+}
+.header .header-text h1{
+  margin-bottom: 1em;
 }
 
-.box{
-    flex: 1;
-    background-color: #0000ff;
-    color: #fff;
-    border-radius: 10px;
-    margin: 20px 10px;
-    padding: 15px 20px;
-    box-shadow: 0 3px 5px black;
+.boxes{
+  margin: 4rem 0;
 }
 
-.box i{
-    margin-right: 10px;
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1;
+  color: #333;
+  border-radius: 10px;
+  margin: 20px 10px;
+  padding: 30px;
+  box-shadow: 11px -12px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.box h2 {
+  margin-bottom: 1em;
+}
+.box i {
+  margin-right: 10px;
+}
+
+footer {
+  background: #1a1818;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+
+@media (max-width: 1200px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 30px;
+    text-align: center;
+  }
+
+  .boxes .container {
+    display: block;
+    text-align: center;
+    width: 80%;
+  }
+}
+@media (max-width: 576px) {
+ 
+.navbar .container {
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+.boxes .container {
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width:360px) {
+  .header img {
+    display: none;
+  }
+
+
 }
