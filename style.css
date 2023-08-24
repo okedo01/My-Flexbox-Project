@@ -29,7 +29,7 @@ ul {
 }
 
 .navbar {
-  background-color: rgb(2, 21, 27);
+  background-color: #474040;
   color: #fff;
   height: 70px;
 }
@@ -70,4 +70,41 @@ ul {
   background-color: #0000ff;
   color: #f5f5f5;
   max-height: 800px;
+}
+
+.header h1{
+    font-size: ;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img{
+    max-width: 350px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxes .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box{
+    flex: 1;
+    background-color: #0000ff;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 5px black;
+}
+
+.box i{
+    margin-right: 10px;
 }
